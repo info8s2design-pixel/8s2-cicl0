@@ -1,4 +1,4 @@
-const CACHE='ciclo-shell-v1.6.0';
+const CACHE='ciclo-shell-v1.6.1';
 const BASE=new URL('./',self.location.href);
 const SHELL=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-512.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL.map(p=>new Request(new URL(p,BASE),{cache:'reload'})))).then(()=>self.skipWaiting()))});
