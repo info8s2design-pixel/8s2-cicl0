@@ -1,4 +1,4 @@
-# CICL0 v1.6.1
+# CICL0 v1.6.2
 
 App HTML standalone di 8s2design per ciclo mestruale e benessere femminile.
 
