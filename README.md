@@ -1,4 +1,4 @@
-# CICL0 v1.5.1
+# CICL0 v1.6.0
 
 App HTML standalone di 8s2design per ciclo mestruale e benessere femminile.
 
@@ -15,3 +15,5 @@ I promemoria nell’app richiedono la pagina aperta; per gli avvisi ad app chius
 Le previsioni sono stime: CICL0 non è un metodo contraccettivo e non effettua diagnosi.
 
 Powered by [8s2design](https://8s2design.wixsite.com/home).
+
+Installazione come PWA con manifest, icone dedicate e cache offline del contenuto dell’app. Il pulsante si nasconde dopo appinstalled o in modalità standalone; alcuni browser richiedono installazione manuale.
