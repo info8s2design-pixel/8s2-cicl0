@@ -1,6 +1,6 @@
-const CACHE='ciclo-shell-v1.6.3-logo-20261105-new';
+const CACHE='ciclo-shell-v1.6.4';
 const BASE=new URL('./',self.location.href);
-const SHELL=['./','./index.html','./logo-cicl0.svg','./favicon.svg','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-512.png','./apple-touch-icon.png'];
+const SHELL=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-512.png','./apple-touch-icon.png','./favicon.svg','./favicon.png','./logo-cicl0.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL.map(p=>new Request(new URL(p,BASE),{cache:'reload'})))).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('ciclo-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',event=>{
